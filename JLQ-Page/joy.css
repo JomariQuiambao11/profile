@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', san-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+ transition: background-color 0.5s ease;  
+}
+
+/* header style and button */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 25px orangered;
+    transform: scale(1.1);
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 32px;
+    line-height: 1.2;
+}
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-2{
+    padding: 7px 28px;
+    background-color: orangered; 
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.abtn{
+    color: white;
+}
+.abtn:hover{
+    color: black;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+/* about style */
+#about{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 12% 8%;
+gap: 10em;
+background: black;
+}
+.about-img img{
+position: relative;
+width: 350px;
+box-shadow: 0 0 25px orangered,
+            0 0 50px orangered;
+border-radius: 50%;
+}
+.about-content h2{
+ text-align: left;
+ color: white;
+ font-size: 42px;
+}
+.about-content h3{
+    font-size: 42px;
+    color: white;
+}
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3m;
+}
+
+.about-img img {
+    transition: transform 0.5s ease; 
+}
+
+.zoom-out {
+    transform: scale(0.9); 
+}
+.about-content {
+    transition: color 0.5s ease; 
+}
+
+/* educational part */
+#education {
+    background-color:whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.education-cards-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.education-card {
+    background-color: skyblue;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+}
+
+.education-card:hover {
+    background-color:white;
+    box-shadow: 3px 5px 20px skyblue;
+}
+
+.education-card a {
+    color: blue;
+}
+
+.education-card a:hover {
+    color: red;
+}
+
+.education-card p {
+    color:black;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.education-card i {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* hobbies style */
+.hobi{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 32px;
+    color: blue;
+}
+#hobbies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobby {
+    width: 250px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-img img {
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+}
+
+.hobby:hover .hobby-img img {
+    transform: scale(1.1);
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hobby:hover .description {
+    opacity: 1;
+}
+
+
+/* contact style */
+#contact-form h2{
+text-align: center;
+margin-top: 3em;
+margin-bottom: 1em;
+font-size: 32px;
+}
+#contact-form form{
+    max-width: 30em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+#contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contact-form form .input-box input, #contact-form form textarea{
+ width: 100%;
+ padding: 1rem;
+ font-size: 18px;
+ color: black;
+ background: rgb(241, 241, 241);
+ border-radius: 1rem;
+ margin: 1rem 0;
+ resize: none;
+}
+.contact-me{
+    color: blue;
+}
+textarea{
+    height: 150px;
+}
+
+h4{
+    font-size: 18px;
+}
+.heading{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+
+
